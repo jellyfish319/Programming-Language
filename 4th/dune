@@ -1,0 +1,19 @@
+(include_subdirs unqualified)
+
+(library
+(name ast)
+(modules ast))
+
+(library
+(name parserMain)
+(modules parserMain parser lexer)
+(libraries ast))
+
+(library
+(name value)
+(modules value))
+
+(library
+(name hw4)
+(modules hw4)
+(libraries ast value))
